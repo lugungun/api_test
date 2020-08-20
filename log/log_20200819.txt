@@ -1,0 +1,18 @@
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 14] 实际结果：<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
+
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2020-08-19 14:50:52] INFO [log_case_info: case_log.py, 14] 实际结果：<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
+
